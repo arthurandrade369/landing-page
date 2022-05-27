@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+    --menu-font-color: #BFB4B4;
+    --container-bg-color: #F2F0F0;
+    --white-color: #FFFFFF;
+    --dark-color: #0a1129;
+    --menu-bg-color: #020140;
+}

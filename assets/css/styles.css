@@ -1,0 +1,141 @@
+@import url(/assets/css/reset.css);
+@import url(/assets/css/global.css);
+
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 6rem;
+    margin: 0 0 5rem;
+}
+
+h2 {
+    font-size: 6rem;
+}
+
+h3 {
+    font-size: 3rem;
+    text-transform: initial;
+    margin: 0 0 3rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.l-bg {
+    background-image: url('/assets/img/subtle-prism-bg.svg');
+}
+
+.l-space {
+    height: 3.6rem;
+}
+
+.l-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(black, var(--menu-bg-color));
+    height: 4rem;
+}
+
+.l-menu ul {
+    display: flex;
+    height: max-content;
+}
+
+.l-menu__item {
+    display: flex;
+    text-transform: uppercase;
+}
+
+.l-menu__item a {
+    color: var(--white-color);
+    font-size: 1.2rem;
+    padding: 1vmax 1.5vmax;
+}
+
+.l-menu__item:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.l-menu__icon{
+    position: relative;
+    font-weight: initial;
+    font-size: initial;
+    margin: 0;
+}
+
+.l-menu__icon img {
+    height: 3.5rem;
+}
+
+.l-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.l-container > section {
+    padding-top: 4rem;
+}
+
+.l-intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10rem;
+    height: 100vh;
+    align-items: center;
+}
+
+.l-intro__content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.l-intro__content:nth-child(*){
+    width: 35rem;
+}
+
+.l-intro__content h2{
+    font-size: 5.25rem;
+    margin-bottom: 2rem;
+}
+
+.l-intro__img {
+    display: flex;
+    justify-content: center;
+}
+
+.l-top3 h2 {
+    height: 100vh;
+    background-image: none;
+    color: var(--dark-color);
+    font-size: xxx-large;
+}
+
+.l-gallery h2 {
+    height: 100vh;
+    color: var(--white-color);
+    font-size: xxx-large;
+}
+
+.l-work h2 {
+    height: 100vh;
+    color: var(--dark-color);
+    font-size: xxx-large;
+}
+
+.l-contact {
+    height: 100vh;
+    color: var(--white-color);
+    font-size: xxx-large;
+}
