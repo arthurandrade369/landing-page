@@ -1,17 +1,17 @@
 @import url(/assets/css/reset.css);
 @import url(/assets/css/global.css);
 
+html {
+    scroll-behavior: smooth;
+}
+
 h1,
 h2,
 h3 {
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 6rem;
+    font-size: 2rem;
     margin: 0 0 5rem;
-}
-
-h2 {
-    font-size: 6rem;
 }
 
 h3 {
@@ -27,6 +27,8 @@ img {
 
 .l-bg {
     background-image: url('/assets/img/subtle-prism-bg.svg');
+    background-position: center center;
+    background-size: cover;
 }
 
 .l-space {
@@ -86,55 +88,81 @@ img {
     padding-top: 4rem;
 }
 
-.l-intro {
+.l-home {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10rem;
     height: 100vh;
     align-items: center;
+    padding: 0 10rem;
 }
 
-.l-intro__content {
+.l-home__content {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
 }
 
-.l-intro__content:nth-child(*){
+.l-home__content:nth-child(*){
     width: 35rem;
 }
 
-.l-intro__content h2{
+.l-home__content h2{
     font-size: 5.25rem;
     margin-bottom: 2rem;
 }
 
-.l-intro__img {
+.l-home__img {
     display: flex;
     justify-content: center;
 }
 
-.l-top3 h2 {
+.l-intro * {
     height: 100vh;
-    background-image: none;
+    color: var(--dark-color);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.l-intro h2 {
+    font-size: 5.5rem;
+    margin: 0 0 5rem;
+}
+
+.l-intro p {
+    max-width: 50rem;
+    font-size: 1.3rem;
+    margin-bottom: 1.9rem;
+    text-align: center;
+}
+
+.l-top3 * {
+    height: 100vh;
+    color: var(--white-color);
+    overflow: hidden;
+}
+
+.l-gallery * {
+    height: 100vh;
     color: var(--dark-color);
     font-size: xxx-large;
 }
 
-.l-gallery h2 {
+.l-work * {
     height: 100vh;
     color: var(--white-color);
     font-size: xxx-large;
 }
 
-.l-work h2 {
+.l-pricing * {
     height: 100vh;
     color: var(--dark-color);
     font-size: xxx-large;
 }
 
-.l-contact {
+.l-contact * {
     height: 100vh;
     color: var(--white-color);
     font-size: xxx-large;
